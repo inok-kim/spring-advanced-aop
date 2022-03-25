@@ -4,8 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.core.annotation.Order;
 
 @Slf4j
+@Order(1) // @Order 어노테이션은 Aspect 단위로만 붙일 수 있다..
 @Aspect
 public class AspectV4Pointcut {
 
